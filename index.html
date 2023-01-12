@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       .box{
+    background-color: rgb(208, 202, 202);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border: 1px solid black;
+    width: 250px;
+    height: 200px;
+}
+        .box_2{      
+            display: flex;
+            width: 20%;        
+            border: 2px solid black;
+            position: absolute;
+            left: 400px;
+    
+}
+        h1{
+            margin: 35px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+<div class="box" id="formulario">
+    <form action="" onsubmit="return false;">  
+        <label for="nombre">Nombre</label><br/>
+        <input type="text" name="nombre" id="nombre"><br/>
+
+        <label for="apellidos">Apellidos</label><br/>
+        <input type="text" name="apellidos" id="apellidos"><br/>
+
+        <label for="edad">Edad</label><br/>
+        <input type="number" name="edad" id="edad"><br/>  
+        
+        <input type="submit" value="enviar" id="submit">
+    </form>
+
+<div class="box_2">
+    <h3 class="p_nombre">Nombre: <span></span></h3>
+    <h3 class="p_apellidos">Apellidos: <span></span></h3>
+    <h3 class="p_edad">Edad: <span></span></h3>
+</div>
+</div>
+    <script src="./ejercicios.js"></script>
+</body>
+</html>
